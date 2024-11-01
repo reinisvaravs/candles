@@ -143,8 +143,8 @@ section {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url(./my-assets/hero1.jpg);
-  background-position: center;
+  background-image: url(./my-assets/hero1.webp);
+  background-position: center 0px;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
@@ -296,6 +296,12 @@ section {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .reason {
+    height: 150px;
+  }
+}
+
 
 .products {
   display: flex;
@@ -318,45 +324,45 @@ section {
 .img-1 .mask,
 .img-6 .mask,
 .img-12 .mask {
-  background: url(./my-assets/one.jpg) no-repeat 50% 50%;
+  background: url(./my-assets/one.webp) no-repeat 50% 50%;
   background-size: cover;
 }
 
 .img-2 .mask,
 .img-7 .mask,
 .img-14 .mask {
-  background: url(./my-assets/two.jpg) no-repeat 50% 50%;
+  background: url(./my-assets/two.webp) no-repeat 50% 50%;
   background-size: cover;
 }
 
 .img-3 .mask,
 .img-15 .mask {
-  background: url(./my-assets/landscape.jpg) no-repeat 50% 50%;
+  background: url(./my-assets/landscape.webp) no-repeat 50% 50%;
   background-size: cover;
 }
 
 .img-4 .mask,
 .img-10 .mask {
-  background: url(./my-assets/three.jpg) no-repeat 50% 50%;
+  background: url(./my-assets/three.webp) no-repeat 50% 50%;
   background-size: cover;
 }
 
 .img-5 .mask,
 .img-11 .mask,
 .img-16 .mask {
-  background: url(./my-assets/four.jpg) no-repeat 50% 50%;
+  background: url(./my-assets/four.webp) no-repeat 50% 50%;
   background-size: cover;
 }
 
 .img-8 .mask,
 .img-17 .mask {
-  background: url(./my-assets/five.jpg) no-repeat 50% 50%;
+  background: url(./my-assets/five.webp) no-repeat 50% 50%;
   background-size: cover;
 }
 
 .img-9 .mask,
 .img-13 .mask {
-  background: url(./my-assets/six.jpg) no-repeat 50% 50%;
+  background: url(./my-assets/six.webp) no-repeat 50% 50%;
   background-size: cover;
 }
 
@@ -447,5 +453,53 @@ html.lenis body {
   #icon-container {
       flex-wrap: wrap;
       gap: 15px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .img-1 .mask,
+  .img-6 .mask,
+  .img-12 .mask {
+    background: url(./my-assets/one-small.webp) no-repeat 50% 50%;
+    background-size: cover;
+  }
+
+  .img-2 .mask,
+  .img-7 .mask,
+  .img-14 .mask {
+    background: url(./my-assets/two-small.webp) no-repeat 50% 50%;
+    background-size: cover;
+  }
+
+  .img-3 .mask,
+  .img-15 .mask {
+    background: url(./my-assets/landscape-small.webp) no-repeat 50% 50%;
+    background-size: cover;
+  }
+
+  .img-4 .mask,
+  .img-10 .mask {
+    background: url(./my-assets/three-small.webp) no-repeat 50% 50%;
+    background-size: cover;
+  }
+
+  .img-5 .mask,
+  .img-11 .mask,
+  .img-16 .mask {
+    background: url(./my-assets/four-small.webp) no-repeat 50% 50%;
+    background-size: cover;
+  }
+
+  .img-8 .mask,
+  .img-17 .mask {
+    background: url(./my-assets/five-small.webp) no-repeat 50% 50%;
+    background-size: cover;
+  }
+
+  .img-9 .mask,
+  .img-13 .mask {
+    background: url(./my-assets/six-small.webp) no-repeat 50% 50%;
+    background-size: cover;
   }
 }

@@ -20,8 +20,14 @@ document.querySelector("body").onscroll = function() {
   document.getElementById("bg").style.backgroundPosition = "center" + " " + yvalue + "px";
 }
 
-
-
+gsap.to('#bg', {
+  display: 'none',
+  scrollTrigger: {
+      trigger: '#bg',
+      start: 'bottom -10%',
+      toggleActions: 'play none none reverse',
+  }
+})
 
 const initialClipPaths = [
   "polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%)",
