@@ -8,17 +8,20 @@ gsap.ticker.add((time) => {
   lenis.raf(time * 1000);
 });
 
-gsap.ticker.lagSmoothing(0);
+gsap.ticker.lagSmoothing(50);
 
 
 
-document.querySelector("body").onscroll = function() {  
+
+document.querySelector("body").onscroll = function() {
+  if (window.innerWidth < 600) { return }
   var scrolltotop = document.scrollingElement.scrollTop;
   var factor = 0.5; // speed
   var yvalue = scrolltotop * factor;
 
   document.getElementById("bg").style.backgroundPosition = "center" + " " + yvalue + "px";
 }
+
 
 gsap.to('#bg', {
   display: 'none',
