@@ -404,7 +404,7 @@ html.lenis body {
 
 
 
-#contacts-container {
+.contacts-container {
   width: 90%;
   max-width: 1100px;
   min-height: 60vh;
@@ -412,19 +412,19 @@ html.lenis body {
   flex-direction: column;
 }
 
-#contacts-heading {
+.contacts-heading {
   color: black;
   margin: 100px 0 0 15%;
   font-size: clamp(40px, 10vw, 90px);
 }
 
-#sub-heading {
+.sub-heading {
   color: black;
   margin: 10px 0 0 15%;
   font-size: clamp(14px, 3vw, 30px); 
 }
 
-#email-div {
+.email-div {
   margin-left: 15%;
   margin-top: 60px;
   line-height: 30px;
@@ -447,6 +447,10 @@ html.lenis body {
   }
 }
 
+#about {
+  h4 { font-size: clamp(40px, 8vw, 90px); }
+  p { font-size: clamp(14px, 2vw, 30px); }
+}
 
 
 

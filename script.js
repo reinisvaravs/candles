@@ -125,25 +125,24 @@ document.querySelectorAll(".homeBtn").forEach(button => {
   }
 })
 
-
-document.querySelectorAll(".aboutBtn").forEach(button => {
-  button.onclick = () => {
-    const aboutHeight = document.querySelector("#aboutHeight").offsetHeight
-    const contactsHeight = document.querySelector("#contactsHeight").offsetHeight
-    window.scroll({
-        top: aboutHeight, 
-        left: 0, 
-        behavior: 'smooth' 
-    });
-  }
-})
-
 document.querySelectorAll(".contactsBtn").forEach(button => {
   button.onclick = () => {
     const aboutHeight = document.querySelector("#aboutHeight").offsetHeight
     const contactsHeight = document.querySelector("#contactsHeight").offsetHeight
     window.scroll({
         top: aboutHeight + contactsHeight, 
+        left: 0, 
+        behavior: 'smooth' 
+    });
+  }
+})
+
+document.querySelectorAll(".aboutBtn").forEach(button => {
+  button.onclick = () => {
+    const aboutHeight = document.querySelector("#aboutHeight").offsetHeight
+    const contactsHeight = document.querySelector("#contactsHeight").offsetHeight
+    window.scroll({
+        top: 99999, 
         left: 0, 
         behavior: 'smooth' 
     });
