@@ -8,12 +8,11 @@ html,
 body {
   width: 100vw;
   height: 100vh;
-  font-family: "PP Neue Montreal";
+  font-family: "Bodoni Moda", serif;
   overflow-x: hidden;
 }
 
 body {
-  /* background-color: #202124; */
   background-color: rgb(210, 210, 210);
 }
 
@@ -406,20 +405,20 @@ html.lenis body {
 #contacts-heading {
   color: black;
   margin: 100px 0 0 15%;
-  font-size: clamp(40px, 10vw, 70px);
+  font-size: clamp(40px, 10vw, 90px);
 }
 
 #sub-heading {
   color: black;
   margin: 10px 0 0 15%;
-  font-size: clamp(14px, 2.5vw, 25px); 
+  font-size: clamp(14px, 3vw, 30px); 
 }
 
 #email-div {
   margin-left: 15%;
   margin-top: 60px;
-  line-height: 25px;
-  p { font-size: clamp(14px, 3vw, 20px); }
+  line-height: 30px;
+  p { font-size: clamp(14px, 3vw, 24px); }
 }
 
 .email {
@@ -429,6 +428,7 @@ html.lenis body {
       color: black;
       background-color: transparent;
       transition: all 0.5s ease;
+      font-size: clamp(14px, 3vw, 22px);
     }
   a:hover {
     padding-left: 5px;
